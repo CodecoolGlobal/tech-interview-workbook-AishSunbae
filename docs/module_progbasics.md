@@ -172,12 +172,10 @@ Each item in a python list can be of any data type.
 
 [source](https://www.w3schools.com/python/ref_func_slice.asp)
 
-The slice() function returns a slice object.
+The **slice()** function returns a slice object.
+*slice(start, end, step)*
 
-```slice(start, end, step)
-```
-
-list slicing:
+**list slicing:**
 list:  listname[0:2] [:4] [1:-1] [:]
 
 #### What arithmetic operators (+,*,-,/) can be used on lists in Python? What do they do?
