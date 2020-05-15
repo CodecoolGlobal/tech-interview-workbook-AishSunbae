@@ -236,6 +236,14 @@ to explicitly concatenate the strings
 #### Explain f strings in Python?
 
 [source](https://realpython.com/python-f-strings/)
+[source](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
+
+Also called “formatted string literals,” f-strings are string literals that have an f at the beginning and curly braces containing expressions that will be replaced with their values.
+*fe:*
+
+```answer = 456
+f"Your answer is "{answer}""
+```
 
 #### Name 4 iterable types in Python!
 
@@ -248,6 +256,16 @@ to explicitly concatenate the strings
 
 [source](https://www.geeksforgeeks.org/python-list-comprehensions-vs-generator-expressions/)
 
+**List Comprehension:**  *It is an elegant way of defining and creating a list. List Comprehension allows us to create a list using for loop with lesser code. What normally takes 3-4 lines of code, can be compressed into just a single line.*
+
+**Generator Expressions:** *similar to list comprehensions, but instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand and allows us to create a generator without the yield keyword.*
+
+**List Comprehension vs Generator Expressions:**
+
+*The generator yields one item at a time and generates item only when in demand.
+Whereas, in a list comprehension, Python reserves memory for the whole list.
+ Thus we can say that the generator expressions are memory efficient than the lists.*
+
 #### Does the order of the function definitions matter in Python? Why?
 
 Really a python source code is a list of instructions from top of file to bottom. Instructions are executed in order.
@@ -257,7 +275,6 @@ Really a python source code is a list of instructions from top of file to bottom
 [source](https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/)
 
 Unpacking in Python refers to an operation that consists of assigning an iterable of values to a tuple (or list ) of variables in a single assignment statement. As a complement, the term packing can be used when we collect several values in a single variable using the iterable unpacking operator.
-
 
 #### What happens when you try to assign the result of a function which has no return statement to a variable in Python?
 
@@ -279,9 +296,10 @@ If there is no return statement (or just a return without an argument), an impli
 2. **step into:** *by default the debugger skips over managed properties and fields, but the Step Into Specific command allows you to override this behavior.*
 3. **step out:** *to step out the specific*
 
-#### How can you start to debug a program from a certain line using the debugger? #TODO
+#### How can you start to debug a program from a certain line using the debugger?
 
-breakpoints
+1. *breakpoints*
+2. *Run to cursor(Shift + F5)*
 
 ### Version control (Git)
 
@@ -298,6 +316,8 @@ breakpoints
 #### What is the difference between the working directory, the staging area and the repository in git?
 
 [source](http://archaeogeek.github.io/foss4gukdontbeafraid/git/stages.html)
+[source](https://medium.com/@lucasmaurer/git-gud-the-working-tree-staging-area-and-local-repo-a1f0f4822018)
+![pic](https://neurathsboat.blog/post/git-intro/featured.png)
 
 #### What are remote repositories in git?
 
@@ -376,13 +396,13 @@ finally block.
 The code in the finally block will be executed regardless of whether an exception
 occurs.
 
-#### In which case should we catch an exception? Why?  #FIXME
+#### In which case should we catch an exception? Why?
 
 Exceptions are convenient in many ways for handling errors and special conditions
 in a program. When you think that you have a code which can produce an error then
 you can use exception handling.
 
-#### What can/should we do with an exception in the ‘except’ block? #FIXME
+#### What can/should we do with an exception in the ‘except’ block?
 
 1. *printing the problem in an elgegant way*
 2. *quit the program if need it*
@@ -424,7 +444,7 @@ home/username in terminal
 
 sudo apt install <deb name>
 
-#### What is package management in Linux, what are repositories? #FIXME
+#### What is package management in Linux, what are repositories?
 
 [source](https://www.linode.com/docs/tools-reference/linux-package-management/)
 
