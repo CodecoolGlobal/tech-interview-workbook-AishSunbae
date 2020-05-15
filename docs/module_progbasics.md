@@ -146,6 +146,14 @@ IndexError: list index out of range
 
 [source](https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/)
 
+In Python, the LEGB rule is used to decide the order in which the namespaces are to be searched for scope resolution.
+The scopes are listed below in terms of hierarchy(highest to lowest/narrowest to broadest):
+
+1. Local(L): Defined inside function/class
+2. Enclosed(E): Defined inside enclosing functions(Nested function concept)
+3. Global(G): Defined at the uppermost level
+4. Built-in(B): Reserved names in Python builtin modules
+
 #### If you need to access the iterator variable after a for loop, how would you do it in Python?  #TODO
 
 [source](https://realpython.com/python-for-loop/)
@@ -159,11 +167,49 @@ fe: string, numbers, list, tuple, dict
 
 [source](https://www.w3schools.com/python/ref_func_slice.asp)
 
+The slice() function returns a slice object.
+slice(start, end, step)
+
 list:  listname[0:2] [:4] [1:-1] [:]
 
 #### What arithmetic operators (+,*,-,/) can be used on lists in Python? What do they do?
 
 [source](https://www.tutorialgateway.org/python-program-to-perform-arithmetic-operations-on-lists/)
+
+```# Python Program to Perform List Arithmetic Operations
+
+NumList1 = [10, 20, 30]
+NumList2 = [5, 2, 3]
+add = []
+sub = []
+multi = []
+div = []
+mod = []
+expo = []
+
+for j in range(3):
+    add.append( NumList1[j] + NumList2[j])
+    sub.append( NumList1[j] - NumList2[j])
+    multi.append( NumList1[j] * NumList2[j])
+    div.append( NumList1[j] / NumList2[j])
+    mod.append( NumList1[j] % NumList2[j])
+    expo.append( NumList1[j] ** NumList2[j])
+
+print("\nThe List Items after Addition =  ", add)
+print("The List Items after Subtraction =  ", sub)
+print("The List Items after Multiplication =  ", multi)
+print("The List Items after Division =  ", div)
+print("The List Items after Modulus =  ", mod)
+print("The List Items after Exponent =  ", expo)```
+
+output:
+The List Items after Addition =   [15, 22, 33]
+The List Items after Subtraction =   [5, 18, 27]
+The List Items after Multiplication =   [50, 40, 90]
+The List Items after Division =   [2.0, 10.0, 10.0]
+The List Items after Modulus =   [0, 0, 0]
+The List Items after Exponent =   [100000, 400, 27000]
+
 
 #### What is the purpose of the in and not in membership operators in Python?
 
@@ -291,6 +337,8 @@ Git is a distributed version control tool that can manage a development project'
 
 [source](https://learn.code.cool/full-stack/#/../pages/general/clean-code)
 [source](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)
+
+Code is clean if it can be understood easily – by everyone on the team. Clean code can be read and enhanced by a developer other than its original author. With understandability comes readability, changeability, extensibility and maintainability.
 
 #### What steps do we usually do during a clean code refactoring?
 
