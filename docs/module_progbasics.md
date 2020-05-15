@@ -26,7 +26,8 @@ A map (also known as dictionary or associative array) is not a data structure. I
 
 numbers = (1, 2, 3, 4)
 result = map(calculateSquare, numbers)
-print(result)```
+print(result)
+```
 
 ### Algorithms
 
@@ -45,7 +46,8 @@ xn = xn−1 + xn−2
     elif n==1:
         return 1
     else:
-        return Fibonacci(n-1)+Fibonacci(n-2)```
+        return Fibonacci(n-1)+Fibonacci(n-2)
+```
 
 #### How do you find a max value in a list if you can’t use any built-in functions?
 
@@ -58,7 +60,8 @@ xn = xn−1 + xn−2
     for i in lst:
         if i > max:
             max = i
-    return max```
+    return max
+```
 
 #### How do you find the average of values in a list if you can’t use any built-in functions?
 
@@ -74,7 +77,8 @@ xn = xn−1 + xn−2
         count += 1
         sum = sum  + i
     avg = sum/count
-    return avg```
+    return avg
+```
 
 #### What do we call an *in-place* sort?
 
@@ -105,7 +109,8 @@ fe: recursive function never quit
 
 ```def random(arg1, arg2): # function signature(function name,paramater list)
     multiply = arg1+ arg2 # function body
-    return multiply```
+    return multiply
+```
 
 ### Programming languages - Python  
 
@@ -201,13 +206,14 @@ print("The List Items after Modulus =  ", mod)
 print("The List Items after Exponent =  ", expo)
 ```
 
-output:
+```output:
 The List Items after Addition =   [15, 22, 33]
 The List Items after Subtraction =   [5, 18, 27]
 The List Items after Multiplication =   [50, 40, 90]
 The List Items after Division =   [2.0, 10.0, 10.0]
 The List Items after Modulus =   [0, 0, 0]
 The List Items after Exponent =   [100000, 400, 27000]
+```
 
 #### What is the purpose of the in and not in membership operators in Python?
 
