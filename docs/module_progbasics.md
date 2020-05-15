@@ -92,7 +92,7 @@ It sorts the list only by modifying the order of the elements within the list.
 
 #### What is the call stack?
 
-[pic](https://dev.to/theoutlander/implementing-the-stack-data-structure-in-javascript-4164)
+![pic](https://res.cloudinary.com/practicaldev/image/fetch/s--s1Qbl8Gf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/mwcwre09s12vqa3gvl7a.png)
 
 #### What is “Stack overflow”?
 
