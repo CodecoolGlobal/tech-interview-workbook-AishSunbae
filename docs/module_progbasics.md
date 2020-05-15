@@ -440,7 +440,7 @@ home/username in terminal
 
 #### How can you install an application in Linux?
 
-sudo apt install <deb name>
+sudo apt install debname
 
 #### What is package management in Linux, what are repositories?
 
@@ -472,7 +472,7 @@ The Debian package management system, based on a tool called dpkg with the very 
 
 #### How can you look up what does a command do in Linux if you have no internet connection?
 
-<commandname> -help or <commandname> -h
+commandname -help or commandname -h
 
 #### What does the following commands do: head, tail, more, less?
 
