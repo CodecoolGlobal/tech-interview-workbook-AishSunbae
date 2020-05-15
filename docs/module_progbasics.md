@@ -176,9 +176,7 @@ list:  listname[0:2] [:4] [1:-1] [:]
 
 [source](https://www.tutorialgateway.org/python-program-to-perform-arithmetic-operations-on-lists/)
 
-```# Python Program to Perform List Arithmetic Operations
-
-NumList1 = [10, 20, 30]
+```NumList1 = [10, 20, 30]
 NumList2 = [5, 2, 3]
 add = []
 sub = []
@@ -200,7 +198,8 @@ print("The List Items after Subtraction =  ", sub)
 print("The List Items after Multiplication =  ", multi)
 print("The List Items after Division =  ", div)
 print("The List Items after Modulus =  ", mod)
-print("The List Items after Exponent =  ", expo)```
+print("The List Items after Exponent =  ", expo)
+```
 
 output:
 The List Items after Addition =   [15, 22, 33]
