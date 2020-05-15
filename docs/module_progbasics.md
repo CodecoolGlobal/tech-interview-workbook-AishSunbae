@@ -112,28 +112,53 @@ In computer programming, variable shadowing occurs when a variable declared with
 (t's defined as when a variable "hides" another variable with the same name. So, when variable shadowing occurs, there are two or more variables with the same name, and their definitions are dependent on their scope (meaning their values may be different depending upon scope).)
 
 #### What can happen if you try to delete/drop/add an item from a List, while you are iterating over it in Python?
+
 #### What is the "golden rule" of variable scoping in Python (context: LEGB)? What is the lifetime of variables?
 https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/
 
 #### If you need to access the iterator variable after a for loop, how would you do it in Python?
+
 #### What type of elements can a list contain in Python?
+Each item in a python list can be of any data type.
+fe: string, numbers, list, tuple, dict
+
 #### What is slice operator in Python and how to use?
 https://www.w3schools.com/python/ref_func_slice.asp
 list:  listname[0:2] [:4] [1:-1] [:]
 
 #### What arithmetic operators (+,*,-,/) can be used on lists in Python? What do they do?
+https://www.tutorialgateway.org/python-program-to-perform-arithmetic-operations-on-lists/
+
 #### What is the purpose of the in and not in membership operators in Python?
+https://www.geeksforgeeks.org/python-membership-identity-operators-not-not/
+Membership operators are operators used to validate the membership of a value. It test for membership in a sequence, such as strings, lists, or tuples.
+in operator : The ‘in’ operator is used to check if a value exists in a sequence or not. Evaluates to true if it finds a variable in the specified sequence and false otherwise.
+‘not in’ operator: Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.
+
 #### What does the + operator mean when used with strings in Python?
+to explicitly concatenate the strings
+fe: "spam" + "eggs"
+    spameggs
+
 #### Explain f strings in Python?
+https://realpython.com/python-f-strings/
+
 #### Name 4 iterable types in Python!
 list, strings, tuple,  dictonory
 
 #### What is the difference between list/set/dictionary comprehension and a generator expression in Python?
+https://www.geeksforgeeks.org/python-list-comprehensions-vs-generator-expressions/
+
 #### Does the order of the function definitions matter in Python? Why?
+Really a python source code is a list of instructions from top of file to bottom. Instructions are executed in order.
+
 #### What does unpacking mean in Python?
-https://towardsdatascience.com/python-basics-iteration-and-looping-6ca63b30835c
+https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/
+Unpacking in Python refers to an operation that consists of assigning an iterable of values to a tuple (or list ) of variables in a single assignment statement. As a complement, the term packing can be used when we collect several values in a single variable using the iterable unpacking operator, * .
+
 
 #### What happens when you try to assign the result of a function which has no return statement to a variable in Python?
+If there is no return statement (or just a return without an argument), an implicit return None is added to the end of a function.
 
 ## Software engineering
 
@@ -143,9 +168,9 @@ https://towardsdatascience.com/python-basics-iteration-and-looping-6ca63b30835c
 print, debugger, rubberduck
 
 #### What does step over, step into and step out mean while using the debugger?
-step  over:
-step into:
-step out:
+step  over:  skip functions
+step into: by default the debugger skips over managed properties and fields, but the Step Into Specific command allows you to override this behavior.
+step out: to step out the specific
 
 #### How can you start to debug a program from a certain line using the debugger?
 breakpoints
@@ -153,12 +178,36 @@ breakpoints
 ### Version control (Git)
 
 #### What are the advantages of using a version control system?
-tracking, backup
+https://www.git-tower.com/learn/git/ebook/en/command-line/basics/why-use-version-control
+Collaboration
+Storing Versions (Properly)
+Restoring Previous Versions
+Understanding What Happened (commits)
+Backup
+
 #### What is the difference between the working directory, the staging area and the repository in git?
 http://archaeogeek.github.io/foss4gukdontbeafraid/git/stages.html
+
 #### What are remote repositories in git?
+https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction
+About 90% of version control related work happens in the local repository: staging, committing, viewing the status or the log/history, etc. Moreover, if you're the only person working on your project, chances are you'll never need to set up a remote repository.
+
+Only when it comes to sharing data with your teammates, a remote repo comes into play. Think of it like a "file server" that you use to exchange data with your colleagues.
+
 #### Why does a merge conflict occur?
+https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
+https://dzone.com/articles/merge-conflict-everything-you-need-to-know
+Merge incoming changes from remote branch to the local branch
+Merge outgoing changes from local branch to the remote branch
+Merge changes in one local branch to another local branch
+Merge changes in one remote branch to another remote branch
+
 #### Through what series of commands could you put a new file into a remote repository connected to your existing local repository?
+mv - move file to that repo
+git add - add to repo
+git commit
+git push
+
 #### What does it mean atomic commits and descriptive commit messages?
 Atomic commits, in short, are what they sound like: atomic. I feel like there’s basically three features a commit needs to have to be atomic:
 1. Every commit pertains to one fix or feature
