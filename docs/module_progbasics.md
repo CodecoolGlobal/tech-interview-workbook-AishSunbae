@@ -21,12 +21,12 @@ map(function, iterable, ...)
 
 A map (also known as dictionary or associative array) is not a data structure. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented.A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.
 
-`def calculateSquare(n):
+```def calculateSquare(n):
   return n*n
 
 numbers = (1, 2, 3, 4)
 result = map(calculateSquare, numbers)
-print(result)`
+print(result)```
 
 ### Algorithms
 
@@ -37,7 +37,7 @@ print(result)`
 
 xn = xn−1 + xn−2
 
-`def Fibonacci(n):
+```def Fibonacci(n):
     if n<0:
         print("Incorrect input")
     elif n==0:
@@ -45,20 +45,20 @@ xn = xn−1 + xn−2
     elif n==1:
         return 1
     else:
-        return Fibonacci(n-1)+Fibonacci(n-2)`
+        return Fibonacci(n-1)+Fibonacci(n-2)```
 
 #### How do you find a max value in a list if you can’t use any built-in functions?
 
 1. in-sort method
 2. print the last element  in a list
 
-`def find_max():
+```def find_max():
     lst = [1, 9, 7, 3, - 2]
     max = 0
     for i in lst:
         if i > max:
             max = i
-    return max`
+    return max```
 
 #### How do you find the average of values in a list if you can’t use any built-in functions?
 
@@ -66,7 +66,7 @@ xn = xn−1 + xn−2
 2. count them with a variable
 3. add  divide them by a variable
 
-`def find_avg():
+```def find_avg():
     lst = [1, 9, 7, 3, - 2]
     count = 0
     sum = 0
@@ -74,7 +74,7 @@ xn = xn−1 + xn−2
         count += 1
         sum = sum  + i
     avg = sum/count
-    return avg`
+    return avg```
 
 #### What do we call an *in-place* sort?
 
@@ -103,9 +103,9 @@ fe: recursive function never quit
 
 #### What are the main parts of a function?
 
-`def random(arg1, arg2): # function signature(function name,paramater list)
+```def random(arg1, arg2): # function signature(function name,paramater list)
     multiply = arg1+ arg2 # function body
-    return multiply`
+    return multiply```
 
 ### Programming languages - Python  
 
@@ -208,7 +208,6 @@ The List Items after Multiplication =   [50, 40, 90]
 The List Items after Division =   [2.0, 10.0, 10.0]
 The List Items after Modulus =   [0, 0, 0]
 The List Items after Exponent =   [100000, 400, 27000]
-
 
 #### What is the purpose of the in and not in membership operators in Python?
 
