@@ -47,6 +47,8 @@ list vs set:  duplication, order,index
 
 #### What is the purpose and methods of a map data structure?
 
+[source](https://www.geeksforgeeks.org/python-map-function/)
+
 map(function, iterable, ...)
 
 *A map (also known as dictionary or associative array) is not a data structure. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented.A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.*
