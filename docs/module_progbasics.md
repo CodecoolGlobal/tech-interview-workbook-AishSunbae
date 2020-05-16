@@ -10,6 +10,36 @@
 
 collection which is ordered, changeable, allows duplicate members
 
+Methods:
+
+1. **list():** *creates a list in Python.* **list([iterable])**
+2. **append():** *Add a single element to the end of the list.* **list.append(item)**
+3. **extend():** *Add Elements of a List to Another List.* **list1.extend(list2)**
+4. **insert():** *Inserts Element to The List.*- **list.insert(index, element)**
+5. **remove():** *Removes item from the list.* **list.remove(element)**
+6. **clear():** *Removes all Items from the List.* **list.clear()**
+7. **index():** *returns smallest index of element in list.* **list.index(element)**
+8. **count():** *Removes element at the given index. list.count(element)*
+9. **reverse():** *Reverses a List.* **list.reverse()**
+10. **reversed():** *returns the reversed iterator of a sequence.* **reversed(seq)**
+11. **sort():** *sorts elements of a list.* **list.sort(key=..., reverse=...)**
+12. **sorted** *returns a sorted list from the given iterable.* **sorted(iterable, key=None, reverse=False)**
+13. **copy():** *Returns Shallow Copy of a List.* **=**
+14. **any():** *Checks if any Element of an Iterable is True.* **any(iterable)**
+15. **all():** *Returns true when all elements in iterable is true.* **all(iterable)**
+16. **ascii():** *Returns String Containing Printable Representation.* **ascii(object)**
+17. **bool():** *Converts a Value to Boolean.* **bool([value])**
+18. **enumerate():** *Returns an Enumerate Object.* **enumerate(iterable, start=0)**
+19. **filter():** *constructs iterator from elements which are true.* **filter(function, iterable)**
+20. **iter():** *returns an iterator.* **iter(object, sentinel)**
+21. **len():** *Returns Length of an Objec.t* **len(s)**
+22. **max():** *returns the largest item.*  **max(iterable, *iterables, key, default)**
+23. **min():** *returns the smallest value.* **min(iterable, *iterables, key, default)**
+24. **map():** *Applies Function and Returns a List.* **map(function, iterable, ...)**
+25. **slice()** *returns a slice object.* **slice(start, stop, step)**
+26. **sum()** *Adds items of an Iterable.* **sum(iterable, start)**
+27. **zip()** *Returns an iterator of tuples.* **zip(*iterables)**
+
 #### What is the difference between a list and a set?
 
 *A set is a collection which is unordered and unindexed, and doesnt allow duplicates.*
