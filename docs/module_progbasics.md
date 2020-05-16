@@ -109,10 +109,11 @@ def find_max():
 def find_avg():
     lst = [1, 9, 7, 3, - 2]
     count = 0
+    sum = 0
     for i in lst:
         count += 1
-    sum_ = sum(lst)
-    avg = sum_/count
+        sum = sum  + i
+    avg = sum/count
     return avg
 ```
 
