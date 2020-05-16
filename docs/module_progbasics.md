@@ -43,7 +43,8 @@ Methods:
 #### What is the difference between a list and a set?
 
 *A set is a collection which is unordered and unindexed, and doesnt allow duplicates.*
-list vs set:  duplication, order,index
+
+**list vs set:**  *duplication, order,index*
 
 #### What is the purpose and methods of a map data structure?
 
