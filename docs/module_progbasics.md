@@ -489,7 +489,7 @@ The Debian package management system, based on a tool called dpkg with the very 
 2. **ls:** *see the files in your current directory*
 3. **cd:** *change your current directory*
     1. *To navigate into the root directory, use* **cd /**
-    2. *To navigate to your home directory, use* **cd or cd ~**
+    2. *To navigate to your home directory, use* **cd** *or* **cd\~**
     3. *To navigate up one directory level, use* **cd ..**
     4. *To navigate to the previous directory (or back),* **use cd -**
 
