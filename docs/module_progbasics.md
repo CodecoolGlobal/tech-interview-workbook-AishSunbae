@@ -19,7 +19,7 @@ Methods:
 5. **remove():** *Removes item from the list.* **list.remove(element)**
 6. **clear():** *Removes all Items from the List.* **list.clear()**
 7. **index():** *returns smallest index of element in list.* **list.index(element)**
-8. **count():** *Removes element at the given index. list.count(element)*
+8. **count():** *Removes element at the given index.* **list.count(element)**
 9. **reverse():** *Reverses a List.* **list.reverse()**
 10. **reversed():** *returns the reversed iterator of a sequence.* **reversed(seq)**
 11. **sort():** *sorts elements of a list.* **list.sort(key=..., reverse=...)**
@@ -32,13 +32,13 @@ Methods:
 18. **enumerate():** *Returns an Enumerate Object.* **enumerate(iterable, start=0)**
 19. **filter():** *constructs iterator from elements which are true.* **filter(function, iterable)**
 20. **iter():** *returns an iterator.* **iter(object, sentinel)**
-21. **len():** *Returns Length of an Objec.t* **len(s)**
-22. **max():** *returns the largest item.*  **max(iterable, *iterables, key, default)**
-23. **min():** *returns the smallest value.* **min(iterable, *iterables, key, default)**
+21. **len():** *Returns Length of an Object.* **len(s)**
+22. **max():** *returns the largest item.*  **max(iterable, \*iterables, key, default)**
+23. **min():** *returns the smallest value.* **min(iterable, \*iterables, key, default)**
 24. **map():** *Applies Function and Returns a List.* **map(function, iterable, ...)**
 25. **slice()** *returns a slice object.* **slice(start, stop, step)**
 26. **sum()** *Adds items of an Iterable.* **sum(iterable, start)**
-27. **zip()** *Returns an iterator of tuples.* **zip(*iterables)**
+27. **zip()** *Returns an iterator of tuples.* **zip(\*iterables)**
 
 #### What is the difference between a list and a set?
 
