@@ -54,7 +54,8 @@ map(function, iterable, ...)
 
 *A map (also known as dictionary or associative array) is not a data structure. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented.A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.*
 
-```def calculateSquare(n):
+```Python
+def calculateSquare(n):
   return n*n
 
 numbers = (1, 2, 3, 4)
@@ -71,7 +72,8 @@ print(result)
 
 xn = xn−1 + xn−2
 
-```def Fibonacci(n):
+```Python
+def Fibonacci(n):
     if n<0:
         print("Incorrect input")
     elif n==0:
@@ -87,7 +89,8 @@ xn = xn−1 + xn−2
 1. *in-sort method*
 2. *print the last element  in a list*
 
-```def find_max():
+```Python
+def find_max():
     lst = [1, 9, 7, 3, - 2]
     max = 0
     for i in lst:
@@ -102,14 +105,14 @@ xn = xn−1 + xn−2
 2. *count them with a variable*
 3. *add  divide them by a variable*
 
-```def find_avg():
+```Python
+def find_avg():
     lst = [1, 9, 7, 3, - 2]
     count = 0
-    sum = 0
     for i in lst:
         count += 1
-        sum = sum  + i
-    avg = sum/count
+    sum_ = sum(lst)
+    avg = sum_/count
     return avg
 ```
 
@@ -140,7 +143,8 @@ fe: recursive function never quit*
 
 #### What are the main parts of a function?
 
-```def random(arg1, arg2): # function signature(function name,paramater list)
+```Python
+def random(arg1, arg2): # function signature(function name,paramater list)
     multiply = arg1+ arg2 # function body
     return multiply
 ```
@@ -215,7 +219,8 @@ list:  listname[0:2] [:4] [1:-1] [:]
 
 [source](https://www.tutorialgateway.org/python-program-to-perform-arithmetic-operations-on-lists/)
 
-```NumList1 = [10, 20, 30]
+```Python
+NumList1 = [10, 20, 30]
 NumList2 = [5, 2, 3]
 add = []
 sub = []
@@ -272,7 +277,8 @@ to explicitly concatenate the strings
 Also called “formatted string literals,” f-strings are string literals that have an f at the beginning and curly braces containing expressions that will be replaced with their values.
 *fe:*
 
-```answer = 456
+```Python
+answer = 456
 f"Your answer is "{answer}""
 ```
 
