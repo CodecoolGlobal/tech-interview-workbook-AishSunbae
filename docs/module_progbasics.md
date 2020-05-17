@@ -86,7 +86,7 @@ def Fibonacci(n):
 
 #### How do you find a max value in a list if you can’t use any built-in functions?
 
-1. *in-sort method*
+1. *sort method*
 2. *print the last element  in a list*
 
 ```Python
