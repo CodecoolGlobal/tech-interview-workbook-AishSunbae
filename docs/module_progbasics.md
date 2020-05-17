@@ -154,6 +154,10 @@ def random(arg1, arg2): # function signature(function name,paramater list)
 
 #### How do you use a dictionary in Python?
 
+[source](https://www.w3schools.com/python/python_dictionaries.asp)
+
+*A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.*
+
 #### What does it mean that an object is immutable in Python?
 
 *These are of in-built types like int, float, bool, string, unicode, tuple.*
