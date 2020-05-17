@@ -12,6 +12,7 @@ collection which is ordered, changeable, allows duplicate members
 
 Methods:
 
+Only some of them are functions with (). The others are methods without ().
 1. **list():** *creates a list in Python.* **list([iterable])**
 2. **append():** *Add a single element to the end of the list.* **list.append(item)**
 3. **extend():** *Add Elements of a List to Another List.* **list1.extend(list2)**
@@ -44,7 +45,7 @@ Methods:
 
 *A set is a collection which is unordered and unindexed, and doesnt allow duplicates.*
 
-**list vs set:**  *duplication, order,index*
+**list vs set:**  *duplication, order, index*
 
 #### What is the purpose and methods of a map data structure?
 
@@ -52,7 +53,7 @@ Methods:
 
 map(function, iterable, ...)
 
-*A map (also known as dictionary or associative array) is not a data structure. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented.A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.*
+*A map (also known as dictionary or associative array) is not a data structure. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented. A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.*
 
 ```Python
 def calculateSquare(n):
@@ -157,6 +158,7 @@ def random(arg1, arg2): # function signature(function name,paramater list)
 [source](https://www.w3schools.com/python/python_dictionaries.asp)
 
 *A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.*
+dict_name = {key:value, ... keyN:valueN} This is a shorter form to describe a dict. :)
 
 #### What does it mean that an object is immutable in Python?
 
@@ -166,6 +168,7 @@ An immutable object can't be changed after it is created.
 #### What is conditional expression in Python?
 
 Ternary operators also known as conditional expressions are operators that evaluate something based on a condition being true or false.
+Details: value_if_true if statement else value_if_false
 
 #### What are different types of arguments in Python?
 
@@ -174,6 +177,7 @@ Ternary operators also known as conditional expressions are operators that evalu
 1. **Default Arguments:** *def sum(a=4, b=2):*
 2. **Keyword Arguments:** *def print_name(name1, name2): print_name(name2 = 'John',name1 = 'Gary')*
 3. **Variable-length Arguments:** *def display(\*name, \*\*address): display('john','Mary','Nina',John='LA',Mary='NY',Nina='DC')*
+*(args) - Arguents,  **(KWargs) (Key Word Arguments)
 
 #### What is variable shadowing? (context: variable scope)
 
@@ -186,6 +190,7 @@ In computer programming, variable shadowing occurs when a variable declared with
 [source](https://www.quora.com/In-Python-why-cant-you-remove-elements-from-a-list-with-a-for-loop-but-you-can-with-a-while-loop)
 
 IndexError: list index out of range
+I do not think so. Try it! Python will recognise, and use the new list's lenght.
 
 *When we delete an item from the list, we are destructively shortening the list, but the range stays the same. Thus, the length of the range is no longer equal to the length of the list, in fact it is greater. Thus, at some point  i  exceeds the count of the list and so we get an index out of range error.*
 
@@ -194,16 +199,29 @@ IndexError: list index out of range
 [source](https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/)
 
 In Python, the LEGB rule is used to decide the order in which the namespaces are to be searched for scope resolution.
-The scopes are listed below in terms of hierarchy(highest to lowest/narrowest to broadest):
+The scopes are listed below in terms of hierarchy (highest to lowest/narrowest to broadest):
 
 1. **Local(L):** *Defined inside function/class*
 2. **Enclosed(E):** *Defined inside enclosing functions(Nested function concept)*
-3. **Global(G):** *Defined at the uppermost level*
+3. **Global(G):** *Defined at the uppermost level*. I would use rather "global scope" instead of "uppermost". Remember: global keyword in Python.
 4. **Built-in(B):** *Reserved names in Python builtin modules*
 
 #### If you need to access the iterator variable after a for loop, how would you do it in Python?  #TODO
 
 [source](https://realpython.com/python-for-loop/)
+The last iteration you can access the iterator.
+Play around these code:
+# define a list
+my_list = [4, 7, 0, 3]
+
+# get an iterator using iter()
+my_iter = iter(my_list)
+
+## iterate through it using next() 
+
+#prints 4
+print(next(my_iter))
+
 
 #### What type of elements can a list contain in Python?
 
@@ -257,6 +275,7 @@ The List Items after Division =   [2.0, 10.0, 10.0]
 The List Items after Modulus =   [0, 0, 0]
 The List Items after Exponent =   [100000, 400, 27000]
 ```
+Nice, I did not know that! :) Thanks!
 
 #### What is the purpose of the in and not in membership operators in Python?
 
@@ -296,6 +315,17 @@ f"Your answer is "{answer}""
 
 #### What is the difference between list/set/dictionary comprehension and a generator expression in Python?
 
+LIST COMPREHENSION
+```python
+  values = [ expression
+             for value in collection
+             <if condition> ]
+```
+DICT COMPREHENSION
+```python
+  a_dict = {key: value    for key, value in zip(list1, list2)    if clause}
+```
+
 [source](https://www.geeksforgeeks.org/python-list-comprehensions-vs-generator-expressions/)
 
 **List Comprehension:**  *It is an elegant way of defining and creating a list. List Comprehension allows us to create a list using for loop with lesser code. What normally takes 3-4 lines of code, can be compressed into just a single line.*
@@ -313,6 +343,8 @@ Whereas, in a list comprehension, Python reserves memory for the whole list.
 Really a python source code is a list of instructions from top of file to bottom. Instructions are executed in order.
 
 #### What does unpacking mean in Python?
+a, b, c = 1, 2, 3  
+a, b, c = call_return_three()
 
 [source](https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/)
 
@@ -510,6 +542,7 @@ The Debian package management system, based on a tool called dpkg with the very 
 
 1. **mkdir:** *Make directory*
 2. **rm:** *Remove files and directories*
+    ```rm -r (recursive) -f (force) file_or_dir_name```. It is useful, when you wanna remove a non-empty directory.
 3. **cat:** *Concatenate files and print to stdout.*
 4. **cp:** *Copy files*
 5. **touch:** *Create a new file or update its timestamp.*
@@ -517,6 +550,7 @@ The Debian package management system, based on a tool called dpkg with the very 
 #### How can you look up what does a command do in Linux if you have no internet connection?
 
 commandname -help or commandname -h
+man commandname
 
 #### What does the following commands do: head, tail, more, less?
 
