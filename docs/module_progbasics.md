@@ -10,9 +10,6 @@
 
 collection which is ordered, changeable, allows duplicate members
 
-Methods:
-
-Only some of them are functions with (). The others are methods without ().
 1. **list():** *creates a list in Python.* **list([iterable])**
 2. **append():** *Add a single element to the end of the list.* **list.append(item)**
 3. **extend():** *Add Elements of a List to Another List.* **list1.extend(list2)**
@@ -203,25 +200,26 @@ The scopes are listed below in terms of hierarchy (highest to lowest/narrowest t
 
 1. **Local(L):** *Defined inside function/class*
 2. **Enclosed(E):** *Defined inside enclosing functions(Nested function concept)*
-3. **Global(G):** *Defined at the uppermost level*. I would use rather "global scope" instead of "uppermost". Remember: global keyword in Python.
+3. **Global(G):** *Defined at the uppermost/global level*.
 4. **Built-in(B):** *Reserved names in Python builtin modules*
 
 #### If you need to access the iterator variable after a for loop, how would you do it in Python?  #TODO
 
 [source](https://realpython.com/python-for-loop/)
-The last iteration you can access the iterator.
-Play around these code:
-# define a list
-my_list = [4, 7, 0, 3]
 
-# get an iterator using iter()
-my_iter = iter(my_list)
+**iterator type:**
 
-## iterate through it using next() 
+1. **String:** *iter('foobar')*
+2. **List:** *iter(['foo', 'bar', 'baz'])*
+3. **Tuple** *iter(('foo', 'bar', 'baz'))*
+4. **Set** *iter({'foo', 'bar', 'baz'})*
+5. **Dict** *iter({'foo': 1, 'bar': 2, 'baz': 3})*
 
-#prints 4
-print(next(my_iter))
+**Can't be iterator:**
 
+1. **Integer** *iter(42) TypeError: 'int' object is not iterable*
+2. **Float** *iter(3.1) TypeError: 'float' object is not iterable*
+3. **Built-in function** *iter(len) TypeError: 'builtin_function_or_method' object is not iterable*
 
 #### What type of elements can a list contain in Python?
 
@@ -275,7 +273,6 @@ The List Items after Division =   [2.0, 10.0, 10.0]
 The List Items after Modulus =   [0, 0, 0]
 The List Items after Exponent =   [100000, 400, 27000]
 ```
-Nice, I did not know that! :) Thanks!
 
 #### What is the purpose of the in and not in membership operators in Python?
 
@@ -315,22 +312,21 @@ f"Your answer is "{answer}""
 
 #### What is the difference between list/set/dictionary comprehension and a generator expression in Python?
 
-LIST COMPREHENSION
+[source](https://www.geeksforgeeks.org/python-list-comprehensions-vs-generator-expressions/)
+
+**List Comprehension:**  *It is an elegant way of defining and creating a list. List Comprehension allows us to create a list using for loop with lesser code. What normally takes 3-4 lines of code, can be compressed into just a single line.*
+
 ```python
   values = [ expression
              for value in collection
              <if condition> ]
 ```
-DICT COMPREHENSION
+
+**Generator Expressions:** *similar to list comprehensions, but instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand and allows us to create a generator without the yield keyword.*
+
 ```python
   a_dict = {key: value    for key, value in zip(list1, list2)    if clause}
 ```
-
-[source](https://www.geeksforgeeks.org/python-list-comprehensions-vs-generator-expressions/)
-
-**List Comprehension:**  *It is an elegant way of defining and creating a list. List Comprehension allows us to create a list using for loop with lesser code. What normally takes 3-4 lines of code, can be compressed into just a single line.*
-
-**Generator Expressions:** *similar to list comprehensions, but instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand and allows us to create a generator without the yield keyword.*
 
 **List Comprehension vs Generator Expressions:**
 
@@ -343,12 +339,15 @@ Whereas, in a list comprehension, Python reserves memory for the whole list.
 Really a python source code is a list of instructions from top of file to bottom. Instructions are executed in order.
 
 #### What does unpacking mean in Python?
-a, b, c = 1, 2, 3  
-a, b, c = call_return_three()
 
 [source](https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/)
 
 Unpacking in Python refers to an operation that consists of assigning an iterable of values to a tuple (or list ) of variables in a single assignment statement. As a complement, the term packing can be used when we collect several values in a single variable using the iterable unpacking operator.
+
+```Python
+a, b, c = 1, 2, 3  
+a, b, c = call_return_three()
+```
 
 #### What happens when you try to assign the result of a function which has no return statement to a variable in Python?
 
@@ -501,6 +500,9 @@ how the work went during the last sprint so that better ways can be found to mee
 #### What is UNIX and what is Linux?
 
 [source](https://www.guru99.com/difference-unix-vs-linux.html)
+
+**Unix:** *The UNIX can be used in internet servers, workstations, and PCs.*
+**Linux:** *Everyone. From home users to developers and computer enthusiasts alike. Linux OS can be installed on various types of devices like mobile, tablet computers.*
 
 #### What do we call the shell in Linux?
 
