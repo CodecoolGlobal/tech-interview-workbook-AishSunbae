@@ -167,7 +167,7 @@ An immutable object can't be changed after it is created.
 Ternary operators also known as conditional expressions are operators that evaluate something based on a condition being true or false.
 Details: value_if_true if statement else value_if_false
 
-#### What are different types of arguments in Python? #TODO: learn
+#### What are different types of arguments in Python?
 
 [source](http://www.trytoprogram.com/python-programming/python-function-arguments/)
 
@@ -521,7 +521,7 @@ home/username in terminal
 
 sudo apt install debname
 
-#### What is package management in Linux, what are repositories? #TODO: learn
+#### What is package management in Linux, what are repositories?
 
 [source](https://www.linode.com/docs/tools-reference/linux-package-management/)
 
@@ -539,7 +539,7 @@ The Debian package management system, based on a tool called dpkg with the very 
     3. *To navigate up one directory level, use* **cd ..**
     4. *To navigate to the previous directory (or back),* **use cd -**
 
-#### What does the following commands do: mkdir, rm, cat, cp, touch? #TODO: learn
+#### What does the following commands do: mkdir, rm, cat, cp, touch?
 
 [source](https://www.softwaretestinghelp.com/unix-file-system-commands/)
 
