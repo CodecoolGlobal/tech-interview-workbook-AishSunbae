@@ -203,9 +203,11 @@ The scopes are listed below in terms of hierarchy (highest to lowest/narrowest t
 3. **Global(G):** *Defined at the uppermost/global level*.
 4. **Built-in(B):** *Reserved names in Python builtin modules*
 
-#### If you need to access the iterator variable after a for loop, how would you do it in Python?  #TODO
+#### If you need to access the iterator variable after a for loop, how would you do it in Python?
 
 [source](https://realpython.com/python-for-loop/)
+
+*never use it after* **NEVER**
 
 **iterator type:**
 
