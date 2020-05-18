@@ -50,7 +50,7 @@ collection which is ordered, changeable, allows duplicate members
 
 map(function, iterable, ...)
 
-*A map (also known as dictionary or associative array) is not a data structure. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented. A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.*
+*A map (also known as dictionary or associative array) is **not a data structure**. It is an abstract data type: an interface that specifies what operations can be performed, but not how these operations are implemented. A map stores a collection of (key,value) pairs, such that each possible key appears at most once in the collection. The operations supported by a map are to store a new (key,value) pair, or to look up the value that is associated with a certain key.*
 
 ```Python
 def calculateSquare(n):
@@ -155,7 +155,7 @@ def random(arg1, arg2): # function signature(function name,paramater list)
 [source](https://www.w3schools.com/python/python_dictionaries.asp)
 
 *A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.*
-dict_name = {key:value, ... keyN:valueN} This is a shorter form to describe a dict. :)
+dict_name = {key:value, ... keyN:valueN}
 
 #### What does it mean that an object is immutable in Python?
 
@@ -167,7 +167,7 @@ An immutable object can't be changed after it is created.
 Ternary operators also known as conditional expressions are operators that evaluate something based on a condition being true or false.
 Details: value_if_true if statement else value_if_false
 
-#### What are different types of arguments in Python?
+#### What are different types of arguments in Python? #TODO: learn
 
 [source](http://www.trytoprogram.com/python-programming/python-function-arguments/)
 
@@ -186,10 +186,8 @@ In computer programming, variable shadowing occurs when a variable declared with
 
 [source](https://www.quora.com/In-Python-why-cant-you-remove-elements-from-a-list-with-a-for-loop-but-you-can-with-a-while-loop)
 
-IndexError: list index out of range
-I do not think so. Try it! Python will recognise, and use the new list's lenght.
-
-*When we delete an item from the list, we are destructively shortening the list, but the range stays the same. Thus, the length of the range is no longer equal to the length of the list, in fact it is greater. Thus, at some point  i  exceeds the count of the list and so we get an index out of range error.*
+*When we delete an item from the list the for loop will be skip some element, because we changed the list(indexing).
+When we add an item  to the list the for loop will be forever running.*
 
 #### What is the "golden rule" of variable scoping in Python (context: LEGB)? What is the lifetime of variables?
 
@@ -282,8 +280,9 @@ The List Items after Exponent =   [100000, 400, 27000]
 
 Membership operators are operators used to validate the membership of a value. It test for membership in a sequence, such as strings, lists, or tuples.
 
-**in operator :** *The ‘in’ operator is used to check if a value exists in a sequence or not. Evaluates to true if it finds a variable in the specified sequence and false otherwise.
-‘not in’ operator: Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.*
+**in operator :** *The ‘in’ operator is used to check if a value exists in a sequence or not. Evaluates to true if it finds a variable in the specified sequence and false otherwise.*
+
+**‘not in’ operator:** *Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.*
 
 #### What does the + operator mean when used with strings in Python?
 
@@ -324,11 +323,11 @@ f"Your answer is "{answer}""
              <if condition> ]
 ```
 
-**Generator Expressions:** *similar to list comprehensions, but instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand and allows us to create a generator without the yield keyword.*
-
 ```python
-  a_dict = {key: value    for key, value in zip(list1, list2)    if clause}
+  a_dict = {key: value  for key, value in zip(list1, list2) if clause}
 ```
+
+**Generator Expressions:** *similar to list comprehensions, but instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand and allows us to create a generator without the yield keyword.*
 
 **List Comprehension vs Generator Expressions:**
 
@@ -423,11 +422,11 @@ Atomic commits, in short, are what they sound like: atomic. I feel like there’
 
 1. *Every commit pertains to one fix or feature*
 2. *Don't break the build on any commit*
-3. *purpose is clear from commit msges and description (descriptive commit messages?)*
+3. *purpose is clear from commit msges and description (descriptive commit messages)*
 
 #### What’s the difference between git and GitHub?
 
-Git is a distributed version control tool that can manage a development project's source code history, while GitHub is a cloud based platform built around the Git tool.
+Git is a distributed **version control tool** that can manage a development project's source code history, while GitHub is a **cloud based platform** built around the Git tool.
 
 ## Software design
 
@@ -508,11 +507,11 @@ how the work went during the last sprint so that better ways can be found to mee
 
 #### What do we call the shell in Linux?
 
-The shell is the command interpretor in an operating system such as Unix or GNU/Linux, it is a program that executes other programs. It provides a computer user an interface to the Unix/GNU Linux system so that the user can run different commands or utilities/tools with some input data.
+The shell is the **command interpretor** in an operating system such as Unix or GNU/Linux, it is a program that executes other programs. It provides a computer user an interface to the Unix/GNU Linux system so that the user can run different commands or utilities/tools with some input data.
 
 #### What does root means in a Linux environment?
 
-root is the user name or account that by default has access to all commands and files on a Linux or other Unix-like operating system. It is also referred to as the root account, root user and the superuser.
+root is the user name or account that by default has access to all commands and files on a Linux or other Unix-like operating system. It is also referred to as the **root account, root user and the superuser**.
 
 #### How do you access your personal files in Linux?
 
@@ -522,7 +521,7 @@ home/username in terminal
 
 sudo apt install debname
 
-#### What is package management in Linux, what are repositories?
+#### What is package management in Linux, what are repositories? #TODO: learn
 
 [source](https://www.linode.com/docs/tools-reference/linux-package-management/)
 
@@ -540,13 +539,13 @@ The Debian package management system, based on a tool called dpkg with the very 
     3. *To navigate up one directory level, use* **cd ..**
     4. *To navigate to the previous directory (or back),* **use cd -**
 
-#### What does the following commands do: mkdir, rm, cat, cp, touch?
+#### What does the following commands do: mkdir, rm, cat, cp, touch? #TODO: learn
 
 [source](https://www.softwaretestinghelp.com/unix-file-system-commands/)
 
 1. **mkdir:** *Make directory*
 2. **rm:** *Remove files and directories*
-    ```rm -r (recursive) -f (force) file_or_dir_name```. It is useful, when you wanna remove a non-empty directory.
+```rm -r (recursive) -f (force) file_or_dir_name```. It is useful, when you wanna remove a non-empty directory.
 3. **cat:** *Concatenate files and print to stdout.*
 4. **cp:** *Copy files*
 5. **touch:** *Create a new file or update its timestamp.*
@@ -560,10 +559,10 @@ man commandname
 
 [source](https://linuxfrombeginning.wordpress.com/2008/09/19/linux/)
 
-1. **head:** *displays the first ten lines of a file, unless otherwise stated.*
+1. **head:** *displays the first **ten** lines of a file, unless otherwise stated.*
 2. **tail:** *display the last part of the file*
 3. **more:** *to view a text file one page at a time, press spacebar to go to the next page*
-4. **less:** *is much the same as more command except*
+4. **less:** *is much the same as more command*
 
 #### How do you download a file from internet using the terminal?
 
