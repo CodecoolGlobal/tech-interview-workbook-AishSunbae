@@ -233,6 +233,11 @@ Each item in a python list can be of any data type.
 The **slice()** function returns a slice object.
 *slice(start, end, step)*
 
+```Python
+a[start:stop:step]
+a[slice(start, stop, step)]
+```
+
 **list slicing:**
 list:  listname[0:2] [:4] [1:-1] [:]
 
