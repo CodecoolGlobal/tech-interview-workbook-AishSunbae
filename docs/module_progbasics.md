@@ -334,6 +334,10 @@ f"Your answer is "{answer}""
 
 **Generator Expressions:** *similar to list comprehensions, but instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand and allows us to create a generator without the yield keyword.*
 
+```Python
+genexpr = ('Hello' for i in range(3))
+```
+
 **List Comprehension vs Generator Expressions:**
 
 *The generator yields one item at a time and generates item only when in demand.
