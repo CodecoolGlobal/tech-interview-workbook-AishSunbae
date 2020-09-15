@@ -10,7 +10,7 @@
   2. *Keywords and expressions are aligned into separate columns*
   3. *Indented new line after every logical step*
   4. *Query parameters indented to create a block like body*
-  5. *Commas are at the end of the line*
+  5. *Commas are at the end of the query*
 
 #### What layers can you name in a simple web application?
 
@@ -35,8 +35,8 @@ The finally block is as the name, some code that you want to execute regardless 
 
 *In general, an exception breaks the normal flow of execution and executes a pre-registered exception handler.*
 *To point to using an exception handler is to keep running the code in cases which are "minor" problems from a view of the program:*
-  - *to avoid a bad input that can broke the consistency of the code*,
-  - *to avoid an index error with limiting the steps for the user*,
+  * *to avoid a bad input that can broke the consistency of the code*,
+  * *to avoid an index error with limiting the steps for the user*,
   
  *Or to prevent some mayor problem. For example, important sequences should properly given for the program. __Misspelling__ or __harmful__ injections
 can be handled with exception in the case that the code can not accept just the right one.*
@@ -85,6 +85,7 @@ A hash function is where a computer takes an input of any length and content (e.
 #### What is the difference between encryption and hashing? When would you use which?
 
 *The key difference between encryption and hashing is that encrypted strings can be reversed back into their original decrypted form if you have the right key.*<br>
+
 *Hashing:<br>
 Ideal way to store passwords, as hashes are inherently one-way in their nature.(+ salt)*
 
@@ -126,8 +127,12 @@ Fist I would encrypt, and after on a secured server.
 
 #### What is the difference between Stack and Queue data structure?
 
+![stack](https://journey.code.cool/v2/media/algorithms/stack-representation.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUpuWkc5eWFUSXdNVGhBWjIxaGFXd3VZMjl0SWl3aVpXMWhhV3dpT2lKblpHOXlhVEl3TVRoQVoyMWhhV3d1WTI5dElpd2labWx5YzNST1lXMWxJam9pUk1PemNtRWlMQ0pzWVhOMFRtRnRaU0k2SWtmRG9YTnd3NkZ5SWl3aVkyOTFiblJ5ZVNJNklraFZJaXdpYkc5allYUnBiMjRpT2lKQ1ZVUWlMQ0poY0hCeklqcGJYU3dpYm1KbUlqb3hOVGszT1RFeU1UZ3dMQ0psZUhBaU9qRTJNREExTURReE9EQjkuRHZaUnAwbm5zV0taeHVEYU5EREhERGRyazZvUlBaZTlqWkVtUnlRMHAzWQ==)
+
 Stack data structure have just one pointer, adding operation (push) or removing operation (pop) take place from the top of the list, 
 for example: LIFO (Last In First Out)
+
+![queue](https://www.studytonight.com/data-structures/images/implementation-of-queue.png)
 
 Queue have two pointers. One for each side of the list. The front side can take a new operation (enqueue),
 to remove (dequeue) an operation the pointer should use the the rear side. Principle: FIFO (First In First Out)
@@ -238,7 +243,6 @@ var is a variable, the value can be modified after all. const is a constant, the
 #### How the list comprehension looks like in Python?
 
 ```Python
-# You can either use loops:
 squares = []
 
 for x in range(10):
@@ -330,8 +334,6 @@ def my_function():
     print("this is the function")
 
 function_variable = my_function
-
-print(function_variable)
 ```
 
 #### List the ways of defining a callable logical unit in JavaScript!
@@ -690,30 +692,30 @@ ol {
 #### What is javascript?
 
 *JS is a scripting language designed to control web page content.<br>*
-  - *can update and change both HTML and CSS*
-  - *can calculate, manipulate and validate data.*
+  * *can update and change both HTML and CSS*
+  * *can calculate, manipulate and validate data.*
 
 #### When to use AJAX? Bring examples of its usage.
 
 *AJAX stands for "Asynchronous Javascript and XML".<br>*
 *AJAX programming is used, for exchanging data in the background without actually disturbing the user experience, and for rendering the access of data more efficiently and effectively.*
 *Things That Are Good for AJAX:*
-    - *Form validation (It's so much nicer when the form tells
+    * *Form validation (It's so much nicer when the form tells
         you as you are typing if you've filled it out wrong or not.),*
-    - *Comments when a commenter hits the comment button, it's nice to see the comment appear immediately on the page.),*
-    - *Login Forms,*
-    - *Auto-Complete(when searching for example),*
-    - *Voting and Rating (forums),*
-    - *Updating With User Content,*
-    - *Chat Rooms And Instant Messaging,*
-    - *Lightboxes instead of pop-ups*
+    * *Comments when a commenter hits the comment button, it's nice to see the comment appear immediately on the page.),*
+    * *Login Forms,*
+    * *Auto-Complete(when searching for example),*
+    * *Voting and Rating (forums),*
+    * *Updating With User Content,*
+    * *Chat Rooms And Instant Messaging,*
+    * *Lightboxes instead of pop-ups*
     
 #### What is DOM and how to manipulate it from Javascript?
 
 *DOM - Document Object Model DOM is representative displaying for the according html document, and those objects can be modified.<br>*
-  - *Creating, removing or replacing an element*
-  - *Modifying an element's text and/or HTML content*
-  - *Getting an element content and working with it*
+  * *Creating, removing or replacing an element*
+  * *Modifying an element's text and/or HTML content*
+  * *Getting an element content and working with it*
 
 ```Javascript
 let element = document.querySelector('selector')
@@ -795,12 +797,12 @@ JSON is basically a way of communicating data to someone, with very, very specif
 #### What type of branching strategy would you use?
 
 *I would use* **Gitflow Workflow**:
-  - *Code in master is deployable at all times,*
-  - *When you want to start working on a new task, create a new branch off of master and give it a descriptive name,*
-  - *Commit to that branch locally and regularly send your work to the same-named branch on the server,*
-  - *Open a pull request when you feel your changes are ready to be merged (or even if you aren’t so sure, but would like some feedback),*
-  - *After the new feature is revised and approved, you can merge it into master,*
-  - *Once your changes are merged and pushed to the master, you can and should delete the branch.*
+  * *Code in master is deployable at all times,*
+  * *When you want to start working on a new task, create a new branch off of master and give it a descriptive name,*
+  * *Commit to that branch locally and regularly send your work to the same-named branch on the server,*
+  * *Open a pull request when you feel your changes are ready to be merged (or even if you aren’t so sure, but would like some feedback),*
+  * *After the new feature is revised and approved, you can merge it into master,*
+  * *Once your changes are merged and pushed to the master, you can and should delete the branch.*
 
 #### What would you do if you find a bug on the production code (master branch)?
 
@@ -907,19 +909,19 @@ This means that TCP tracks all data sent, requiring acknowledgment for each octe
 #### How does an HTTP Request look like? What are the most relevant HTTP header fields?
 
 *A simple request message from a client computer consists of the following components:*<br>
-  - *A request line to get a required resource, for example a request GET /content/page1.html is requesting a resource called /content/page1.html from the server.*
-  - *Headers (Example – Accept-Language: EN).*
-  - *An empty line.*
-  - *A message body which is optional.*
-  - *All the lines should end with a carriage return and line feed. The empty line should only contains carriage return and line feed without any spaces.*
+  * *A request line to get a required resource, for example a request GET /content/page1.html is requesting a resource called /content/page1.html from the server.*
+  * *Headers (Example – Accept-Language: EN).*
+  * *An empty line.*
+  * *A message body which is optional.*
+  * *All the lines should end with a carriage return and line feed. The empty line should only contains carriage return and line feed without any spaces.*
 
 #### How does an HTTP Response look like? What are the most relevant HTTP header fields?
 
 *A simple response from the server contains the following components:*
-  - *HTTP Status Code (For example HTTP/1.1 301 Moved Permanently, means the requested resource was permanently moved and redirecting to some other resource).*
-  - *Headers (Example – Content-Type: html)*
-  - *An empty line.*
-  - *A message body which is optional.*
+  * *HTTP Status Code (For example HTTP/1.1 301 Moved Permanently, means the requested resource was permanently moved and redirecting to some other resource).*
+  * *Headers (Example – Content-Type: html)*
+  * *An empty line.*
+  * *A message body which is optional.*
 
 #### What is DNS? How does it work?
 
@@ -938,18 +940,18 @@ This means that TCP tracks all data sent, requiring acknowledgment for each octe
 
 *The purpose for `session` is to* **store data** *that you (as the web application developer) would like to have preserved across page loads.<br>
 Thus, you can set flags in your login script such as *`logged_in`, *to check if the user is logged in, and on any other page check* `session['logged_in'] == true`*, instead of querying for that information.*
-  - *Sessions use a cookie as a key of sorts, to associate with the data that is stored on the server side.*
-  - *IDU is stored on server (i.e. server-side)*
-  - *Safer (because of 1)*
-  - *Expiration can not be set, session variables will be expired when users close the browser.*
+  * *Sessions use a cookie as a key of sorts, to associate with the data that is stored on the server side.*
+  * *IDU is stored on server (i.e. server-side)*
+  * *Safer (because of 1)*
+  * *Expiration can not be set, session variables will be expired when users close the browser.*
 
 #### What would you use a cookie for?
 
 *You can save settings to cookie for the websites between visits, so its gonna remember your previous preferences.*<br>
 *Cookies:*
-  - *IDU is stored on web-browser (i.e. client-side)*
-  - *Not very safe, since hackers can reach and get your information (because of 1)*
-  - *Expiration can be set (see setcookies() for more information)*
+  * *IDU is stored on web-browser (i.e. client-side)*
+  * *Not very safe, since hackers can reach and get your information (because of 1)*
+  * *Expiration can be set (see setcookies() for more information)*
 
 ## Software Development Methodologies
 
@@ -964,16 +966,16 @@ Each phase must be ***100% complete before the next phase can start***, and trad
 ***Adaptive*** *approach which is able to respond to the changing requirements of the clients. Direct communication and feedback from customer.*
 
 **Agile development methodology:**<br>
- -> *Requirement/Features/User stories/Product Backlog*
- -> *Scrum Team(with lead)*
- -> *Sprint Planning(relative time)*
- -> *Sprints 1-4 Weeks Duration* 
- -> *Production deployment*
- -> *Done Checklist*
+ * *Requirement/Features/User stories/Product Backlog*
+ * *Scrum Team(with lead)*
+ * *Sprint Planning(relative time)*
+ * *Sprints 1-4 Weeks Duration* 
+ * *Production deployment*
+ * *Done Checklist*
  *(While this process other people making the desing,build it,inegrate,test the software)*
- -> *Sprint Retrospective*
- -> *Product review(customer input)*
- -> *Potential Product Increment*
+ * *Sprint Retrospective*
+ * *Product review(customer input)*
+ * *Potential Product Increment*
 
 #### What are the SCRUM roles?
 
@@ -983,20 +985,18 @@ Each phase must be ***100% complete before the next phase can start***, and trad
 
 #### What are the SCRUM ceremonies?
 
-| **Ceremonies** |
-|:-:|
-| *Sprint Planning* |
-| *Sprint review* |
-| *Sprint retrospective* |
-| *Daily Scrum* |
+**Ceremonies**
+* *Sprint Planning*
+* *Sprint review*
+* *Sprint retrospective*
+* *Daily Scrum*
 
 #### What are the SCRUM artifacts?
 
-| **Artifacts** |
-|:-:|
-| *Increment* |
-| *Product backlog* |
-|*Sprint backlog* |
+**Artifacts**
+* *Increment*
+* *Product backlog*
+* *Sprint backlog*
 
 #### What is the main goal of a retrospective meeting?
 
@@ -1005,8 +1005,8 @@ Each phase must be ***100% complete before the next phase can start***, and trad
 #### Explain, when would you recommend to use the waterfall methodology?
 
 *Use Waterfall when:*
-  - *The project is simple,*
-  - *The project is complicated, but you have the expertise to deliver it,*
-  - *It is all you know and you have no support for change,*
-  - *The upfront investment is not risky to make,*
-  - *You focus your performance measures on delivery date and budget.*
+  * *The project is simple,*
+  * *The project is complicated, but you have the expertise to deliver it,*
+  * *It is all you know and you have no support for change,*
+  * *The upfront investment is not risky to make,*
+  * *You focus your performance measures on delivery date and budget.*
