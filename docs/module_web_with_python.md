@@ -14,7 +14,7 @@
 
 #### What layers can you name in a simple web application?
 
-[link](https://gyires.inf.unideb.hu/GyBITT/08/ch04.html#:~:text=The%20most%20external%20of%20them,that%20is%20the%20Data%20Layer.)
+[web application](https://gyires.inf.unideb.hu/GyBITT/08/ch04.html#:~:text=The%20most%20external%20of%20them,that%20is%20the%20Data%20Layer.)
 
 1. View
 2. Application service
@@ -49,8 +49,8 @@ SQL Injection (SQLi) is a type of an injection attack that makes it possible to 
 
 #### What is XSS? How to protect an application against it?
 
-[link](https://www.computerweekly.com/tip/Cross-site-scripting-explained-How-to-prevent-XSS-attacks)
-[link](https://www.acunetix.com/websitesecurity/sql-injection/#:~:text=The%20only%20sure%20way%20to,inputs%20such%20as%20login%20forms.)
+[XSS protect](https://www.computerweekly.com/tip/Cross-site-scripting-explained-How-to-prevent-XSS-attacks)
+[sql injection](https://www.acunetix.com/websitesecurity/sql-injection/#:~:text=The%20only%20sure%20way%20to,inputs%20such%20as%20login%20forms.)
 
 Cross-site script injection. Most of all:
 
@@ -68,9 +68,12 @@ In at least hashed form. Or hashed and salted.
 
 #### What is HTTPS?
 
-Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet It protects against man-in-the-middle attacks.
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). 
+It is used for secure communication over a computer network, and is widely used on the Internet It protects against man-in-the-middle attacks.
 
 #### What is encryption and decryption?
+
+[encryption](https://lab.getapp.com/common-encryption-methods/)
 
 *Encryption:<br>
 The process of translating plain text data (plaintext) into something that appears to be random and meaningless (ciphertext).*
@@ -80,7 +83,10 @@ The process of converting ciphertext back to plaintext.*
 
 #### What is hashing?
 
-A hash function is where a computer takes an input of any length and content (e.g. letters, numbers, and symbols) and uses a mathematical formula to chop it, mix it up, and produce an output of a specific length.
+![hashing](https://cheapsslsecurity.com/blog/wp-content/uploads/2017/08/hashing-function.jpg)
+
+A hash function is where a computer takes an input of any length and content (e.g. letters, numbers, and symbols) 
+and uses a mathematical formula to chop it, mix it up, and produce an output of a specific length.
 
 #### What is the difference between encryption and hashing? When would you use which?
 
@@ -94,26 +100,23 @@ Ideal for sending secure messages.*
 
 #### What encryption methods do you know?
 
-[//]: # (TODO: encryption methods)
-[link](https://lab.getapp.com/common-encryption-methods/#:~:text=Advanced%20Encryption%20Standard%20(AES)&text=Each%20round%20consists%20of%20several,rest%20and%20data%20in%20transit.)
+[encryption methods](https://lab.getapp.com/common-encryption-methods/#:~:text=Advanced%20Encryption%20Standard%20(AES)&text=Each%20round%20consists%20of%20several,rest%20and%20data%20in%20transit.)
+[encryption](https://www.goodcore.co.uk/blog/types-of-encryption/)
 
-1. Symmetric
-2. Asymmetric
-3. RSA
+![Symmetric](data:image/jpeg;base64,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)
 
-AES Advanced Encryption Standard is a symmetric encryption algorithm that encrypts fixed blocks of data (of 128 bits) at a time. The keys used to decipher the text can be 128-, 192-, or 256-bit long.
+1. **Symmetric encryption:** <br>
+Symmetric encryption uses a single key to encrypt as well as decrypt data. The key needs to be shared with all authorized people.
 
-RSA is considered an asymmetric algorithm due to its use of a pair of keys.
-You’ve got your public key,which is what we use to encrypt our message,
- and a private key to decrypt it
- 
- *`RSA`:<br>
-Considered an asymmetric algorithm due to its use of a pair of keys.
-You’ve got your public key, which is what we use to encrypt our message, and a private key t
+![Asymmetric](https://lab.getapp.com/wp-content/uploads/2019/07/GetApp_assymetric_encryption.png)
+
+2. **Asymmetric encryption:** <br>
+Also called public key cryptography, asymmetric encryption uses two separate keys—one public (shared with everyone) and one private (known only to the key’s generator). The public key is used to encrypt the data and the private key helps to decrypt it.
 
 #### What hashing methods do you know?
 
-[//]: # (TODO: hashing methods)
+[hashing](https://www.2brightsparks.com/resources/articles/introduction-to-hashing-and-its-uses.html)
+
 1. MD5 
 2. SHA-2
 
@@ -153,7 +156,8 @@ Adding each element value together and dividing it with the the total element co
 
 #### What is Big O complexity? Explain time and space complexity!
 
-[link](https://medium.com/@zoebai_70369/big-o-notation-time-and-space-complexity-305a1e301e35#:~:text=Big%20O%20notation%20is%20used,space%20used%20by%20an%20algorithm.)
+![bigO](https://miro.medium.com/max/2544/1*yiyfZodqXNwMouC0-B0Wlg.png)
+[bigO](https://medium.com/@zoebai_70369/big-o-notation-time-and-space-complexity-305a1e301e35#:~:text=Big%20O%20notation%20is%20used,space%20used%20by%20an%20algorithm.)
 
 *Big O Notation is to describe the complexity of an algorithm. How long an algorithm takes to run. It is to compare the efficiency of different approaches to a problem.*
   * How quickly the runtime grows : use Big O Notation to talk about how quickly the runtime grows.
@@ -369,6 +373,7 @@ function_variable = my_function
         * event handler: a callable function
         
 	example:
+
 ```Javascript
 document.querySelector(".Btn").addEventListener("click", displayDate);
 ```
@@ -384,6 +389,7 @@ Event listeners have a target, which they listen for. It can be triggered by:
 
 *A callback is a function that is to be executed after another function has finished executing — hence the name ‘call back’.
 More complexly put: In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.*
+
 ```Javascript
 function doHomework(subject, callback) {
  alert(`Starting my ${subject} homework.`);
@@ -400,6 +406,7 @@ doHomework('math', alertFinished);
 #### What is a Python decorator? How does it work? Tell some examples of its usage.
 
 *A decorator takes in a function, adds some functionality and returns it.*
+
 ```Javascript
 def smart_divide(func):
    def inner(a,b):
@@ -581,13 +588,15 @@ XHTML:
 #### How to include a CSS file in a webpage?
 
 *Using the link tag in .html file:*
+
 ```HTML
 <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 ```
 
 #### How to select an element using its id in CSS?
 
-*You have to use the hashtag(#) + the element id name:***
+*You have to use the hashtag(#) + the element id name:*
+
 ```CSS
 #elementIdName {
     /*code;*/
@@ -597,6 +606,7 @@ XHTML:
 #### How to select elements using their class in CSS?
 
 *You have to use the dot(.) + the element class name:*
+
 ```CSS
 .elementClassName {
     /*code;*/
@@ -606,6 +616,7 @@ XHTML:
 #### How to select elements which have the ‘alpha’ and ‘beta’ classes in CSS?
 
 *You have to define in css file with dot classname dot classname:*
+
 ```CSS
 .alpha.beta{color:red;}
 /*here you can reach the beta class*/
@@ -746,6 +757,7 @@ div.setAttribute('contentEditable', '')
 
 *The addEventListener method is the most preferred way to add an event listener to window, document or any other element in the DOM,<br>
 because JavaScript in the browser uses an event-driven programming model.* **Everything starts by following an event**
+
 ```Javascript
 let btn = document.querySelector('button');
 btn.addEventListener('click',function(event) {
@@ -759,6 +771,7 @@ btn.addEventListener('click',function(event) {
 When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
 With capturing, the event is first captured by the outermost element and propagated to the inner elements.
 Event capturing:*
+
 ```
 ---------------| |-----------------
 | element1     | |                |
@@ -771,6 +784,7 @@ Event capturing:*
 
 *The event handler of element1 fires first, the event handler of element2 fires last.
 Event bubbling:*
+
 ```
                / \
 ---------------| |-----------------
@@ -781,6 +795,7 @@ Event bubbling:*
 |        Event BUBBLING           |
 -----------------------------------
 ```
+
 *The event handler of element2 fires first, the event handler of element1 fires last.*
 
 #### What is JSON and how do we use it?
@@ -812,14 +827,15 @@ Alternatively, I would open a new branch, locate and fix the bug, after testing 
 #### How can you move changes from one branch to another in GIT?
 
 *Make and checkout to a new branch will copy the actual state of the original branch where can be rollback or set back status. Rebase or merge bring changes from another branch into the current one.*
+
 ```git
 git branch checkout <branchname>
 ```
+
 #### How does a VCS help with code reviews?
 
  * *Modern version control systems are designed to help address problems that teams face when collaborating.*
  * *Breaking down silos and embracing more perspectives and conversations can enable you and your team to deliver better software.*
-
 
 #### What is your favorite git command? Why?
 
