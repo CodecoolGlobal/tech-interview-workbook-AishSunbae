@@ -529,14 +529,20 @@ In modern databases transactions also do some other things - like ensure that yo
 
 #### What kind of database relations do you know? How to define them?
 
+![One-to-One](https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/relational.07.03.2.png)
+
 **One-to-One:**<br>
 *A row in table A can have only one matching row in table B, and vice versa.*
+
+![One-to-Many](https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/relational.07.04.2.png)
 
 **One-to-Many (or Many-to-One):**<br>
 *This is the most common relationship type. In this type of relationship,<br>
 a row in table A can have many matching rows in table B,<br>
 but a row in table B can have only one matching row in table A.<br>
 (Each customer can only be assigned one city. One city can be assigned to many customers.)*
+
+![Many-to-Many](https://www3.ntu.edu.sg/home/ehchua/programming/sql/images/ManyToMany.png)
 
 **Many-to-Many:**<br>
 *A many-to-many relationship could be thought of as two one-to-many relationships,<br>
